@@ -1,8 +1,8 @@
-## QMD_Android
-for release.
+## 关于仓库
+用于发布更新。
 
-## What is QMD
-QMD is a useful and simple music download tool.
+## 什么是QMD
+QMD是一款简单实用的音乐下载工具。
 
-## About QMD
-I will be open source when I lose interest in QMD.
+## 其他说明
+当我不想维护时，我会开源QMD。
