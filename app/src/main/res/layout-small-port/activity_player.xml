@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="click"
+            type="com.qmd.jzen.ui.activity.PlayerActivity.ClickEvent" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.PlayerActivity">
+
+        <ImageView
+            android:id="@+id/imageView_show"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/seekBar_progress"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_singer"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="正在加载"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_singer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="QMD"
+            app:layout_constraintEnd_toEndOf="@+id/textView_title"
+            app:layout_constraintStart_toStartOf="@+id/textView_title"
+            app:layout_constraintTop_toBottomOf="@+id/textView_title" />
+
+        <SeekBar
+            android:id="@+id/seekBar_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.708" />
+
+        <ImageView
+            android:id="@+id/imageView_play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:alpha="0.6"
+            android:background="@drawable/ripple_img_btn"
+            android:onClick="@{()->click.playAndPause()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar_progress"
+            app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView_previous"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0.6"
+            android:background="@drawable/ripple_img_btn"
+            android:onClick="@{()->click.previous()}"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_play"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_play"
+            app:layout_constraintTop_toTopOf="@+id/imageView_play"
+            app:srcCompat="@drawable/ic_skip_previous_black_24dp"
+            tools:srcCompat="@drawable/ic_skip_previous_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView_next"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:alpha="0.6"
+            android:background="@drawable/ripple_img_btn"
+            android:onClick="@{()->click.next()}"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_play"
+            app:layout_constraintStart_toEndOf="@+id/imageView_play"
+            app:layout_constraintTop_toTopOf="@+id/imageView_play"
+            app:srcCompat="@drawable/ic_skip_next_black_24dp"
+            tools:srcCompat="@drawable/ic_skip_next_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="00:00"
+            app:layout_constraintStart_toStartOf="@+id/seekBar_progress"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar_progress" />
+
+        <TextView
+            android:id="@+id/textView_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="--:--"
+            app:layout_constraintEnd_toEndOf="@+id/seekBar_progress"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar_progress" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,129 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk 31
+    defaultConfig {
+        applicationId "com.qmd.jzen"
+        minSdk 21
+        targetSdk 29
+        versionCode 76
+        versionName "1.7.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    sourceSets {
+        // Adds exported schema location as test app assets.
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'com.arialyy.aria:core:3.8.15'
+    kapt 'com.arialyy.aria:compiler:3.8.15'
+
+    implementation 'androidx.recyclerview:recyclerview-selection:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.13.1'
+    kapt 'com.github.bumptech.glide:compiler:4.13.1'
+
+    def material_dialogs_version = "3.3.0"
+    implementation "com.afollestad.material-dialogs:core:${material_dialogs_version}"
+    implementation "com.afollestad.material-dialogs:files:${material_dialogs_version}"
+    implementation "com.afollestad.material-dialogs:color:${material_dialogs_version}"
+    implementation "com.afollestad.material-dialogs:bottomsheets:${material_dialogs_version}"
+
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    //exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.13.3'
+    implementation 'com.google.android.exoplayer:extension-mediasession:2.13.3'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.13.3'
+
+    def lifecycle_version = "2.4.1"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+
+    // Navigation
+    def nav_version = "2.4.2"
+    // Kotlin
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
+    implementation 'androidx.fragment:fragment-ktx:1.4.1'
+
+    // room  kotlin
+    def roomVersion = "2.4.1"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    annotationProcessor("androidx.room:room-compiler:$roomVersion")
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:$roomVersion")
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:$roomVersion")
+    //Test helpers
+    testImplementation("androidx.room:room-testing:$roomVersion")
+
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    testImplementation 'junit:junit:4.13.2'
+
+    androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
+    androidTestImplementation ('androidx.test.espresso:espresso-core:3.3.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestImplementation "androidx.test.ext:junit:1.1.3"
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+
+    /**
+     -dontwarn com.tencent.bugly.**
+     -keep public class com.tencent.bugly.**{*;}
+     */
+
+    // 东哥牛逼
+    implementation 'com.github.liangjingkanji:BRV:1.3.62'
+
+    //implementation 'com.mpatric:mp3agic:0.9.1'
+}

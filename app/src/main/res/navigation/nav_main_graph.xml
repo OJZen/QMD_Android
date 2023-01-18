@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.qmd.jzen.ui.fragments.MainFragment"
+        android:label="QMD"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_favoriteMusicFragment"
+            app:destination="@id/favoriteMusicFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_donateFragment"
+            app:destination="@id/donateFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/songListFragment"
+        android:name="com.qmd.jzen.ui.fragments.SongListFragment"
+        android:label="歌单"
+        tools:layout="@layout/fragment_song_list">
+        <action
+            android:id="@+id/action_songListFragment_to_musicListFragment"
+            app:destination="@id/musicListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.qmd.jzen.ui.fragments.SearchFragment"
+        android:label=""
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/musicListFragment"
+        android:name="com.qmd.jzen.ui.fragments.MusicListFragment"
+        android:label="歌曲列表"
+        tools:layout="@layout/fragment_music_list" />
+
+    <fragment
+        android:id="@+id/favoriteMusicFragment"
+        android:name="com.qmd.jzen.ui.fragments.MusicListFragment"
+        android:label="收藏"
+        tools:layout="@layout/fragment_music_list" />
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.qmd.jzen.ui.fragments.SettingFragment"
+        android:label="设置" />
+
+    <fragment
+        android:id="@+id/musicInfoFragment"
+        android:name="com.qmd.jzen.ui.fragments.MusicInfoFragment"
+        android:label="MusicInfoFragment" />
+
+    <fragment
+        android:id="@+id/donateFragment"
+        android:name="com.qmd.jzen.ui.fragments.DonateFragment"
+        android:label="打赏"
+        tools:layout="@layout/fragment_donate" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.qmd.jzen.ui.fragments.AboutFragment"
+        android:label="关于"
+        tools:layout="@layout/fragment_about" />
+</navigation>

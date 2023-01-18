@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="click"
+            type="com.qmd.jzen.ui.fragments.MainFragment.ClickEvent" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.qmd.jzen.ui.fragments.MainFragment">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="@{()->click.openSearch()}"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_round_search_24"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_search_music"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/image_search" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.qmd.jzen.ui.view.MenuItemView
+                        android:id="@+id/menuItem_songlist"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="@{()->click.openSonglist()}"
+                        app:itemImg="@drawable/ic_songlist"
+                        app:itemTitle="歌单" />
+
+                    <com.qmd.jzen.ui.view.MenuItemView
+                        android:id="@+id/menuItem_download"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="@{()->click.openDownload()}"
+                        app:itemImg="@drawable/ic_download"
+                        app:itemTitle="下载" />
+
+                    <com.qmd.jzen.ui.view.MenuItemView
+                        android:id="@+id/menuItem_donate"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="@{()->click.openDonate()}"
+                        app:itemImg="@drawable/ic_money"
+                        app:itemTitle="打赏" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.qmd.jzen.ui.view.MenuItemView
+                        android:id="@+id/menuItem_favorite"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="@{()->click.openFavorite()}"
+                        app:itemImg="@drawable/ic_favorite"
+                        app:itemTitle="收藏" />
+
+                    <com.qmd.jzen.ui.view.MenuItemView
+                        android:id="@+id/menuItem_setting"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="@{()->click.openSetting()}"
+                        app:itemImg="@drawable/ic_setting"
+                        app:itemTitle="设置" />
+
+                    <com.qmd.jzen.ui.view.MenuItemView
+                        android:id="@+id/menuItem_about"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:onClick="@{()->click.openAbout()}"
+                        app:itemImg="@drawable/ic_about"
+                        app:itemTitle="关于" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/text_playing_music"
+            android:src="@drawable/ic_album_white_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

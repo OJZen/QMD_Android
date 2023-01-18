@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LinkTextView">
+        <attr name="link" format="string|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="AboutItemView">
+        <attr name="title" format="string|reference"/>
+        <attr name="headPic" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MenuItemView">
+        <attr name="itemTitle" format="string|reference"/>
+        <attr name="itemImg" format="reference"/>
+    </declare-styleable>
+</resources>

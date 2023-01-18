@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.AboutFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_card_version" />
+
+            <com.qmd.jzen.ui.view.AboutItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:headPic="@drawable/about_info"
+                app:title="@string/about_info" />
+
+            <com.qmd.jzen.ui.view.AboutItemView
+                android:id="@+id/cardView_QQGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:headPic="@drawable/about_group"
+                app:title="@string/about_group" />
+
+            <com.qmd.jzen.ui.view.AboutItemView
+                android:id="@+id/cardView_telegram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:headPic="@drawable/about_telegram"
+                app:title="@string/about_telegram" />
+
+            <com.qmd.jzen.ui.view.AboutItemView
+                android:id="@+id/cardView_OffcialAccounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:headPic="@drawable/about_group"
+                app:title="@string/about_officalAccounts" />
+
+            <com.qmd.jzen.ui.view.AboutItemView
+                android:id="@+id/cardView_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:headPic="@drawable/about_email"
+                app:title="@string/about_email" />
+
+            <com.qmd.jzen.ui.view.AboutItemView
+                android:id="@+id/cardView_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:headPic="@drawable/about_twitter"
+                app:title="@string/about_twitter" />
+
+            <com.qmd.jzen.ui.view.AboutItemView
+                android:id="@+id/cardView_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:headPic="@drawable/about_bug"
+                app:title="@string/about_log" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="采用开源项目"
+                    android:textSize="18sp" />
+
+                <com.qmd.jzen.ui.view.LinkTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="AriaLyy/Aria"
+                    android:textSize="16sp"
+                    app:link="https://github.com/AriaLyy/Aria" />
+
+                <com.qmd.jzen.ui.view.LinkTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="square/okhttp"
+                    android:textSize="16sp"
+                    app:link="https://github.com/square/okhttp" />
+
+
+                <com.qmd.jzen.ui.view.LinkTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="hdodenhof/CircleImageView"
+                    android:textSize="16sp"
+                    app:link="https://github.com/hdodenhof/CircleImageView" />
+
+                <com.qmd.jzen.ui.view.LinkTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="bumptech/glide"
+                    android:textSize="16sp"
+                    app:link="https://github.com/bumptech/glide" />
+
+                <com.qmd.jzen.ui.view.LinkTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="afollestad/material-dialogs"
+                    android:textSize="16sp"
+                    app:link="https://github.com/afollestad/material-dialogs" />
+
+                <com.qmd.jzen.ui.view.LinkTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="google/gson"
+                    android:textSize="16sp"
+                    app:link="https://github.com/google/gson" />
+
+                <com.qmd.jzen.ui.view.LinkTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="google/ExoPlayer"
+                    android:textSize="16sp"
+                    app:link="https://github.com/google/ExoPlayer" />
+
+                <com.qmd.jzen.ui.view.LinkTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="square/retrofit"
+                    android:textSize="16sp"
+                    app:link="https://github.com/square/retrofit" />
+
+                <com.qmd.jzen.ui.view.LinkTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="liangjingkanji/StateLayout"
+                    android:textSize="16sp"
+                    app:link="https://github.com/liangjingkanji/StateLayout" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

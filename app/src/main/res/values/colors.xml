@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 800 -->
+    <color name="colorPrimary">#c62828</color>
+    <color name="colorPrimaryDark">#8e0000</color>
+    <color name="colorPrimaryLight">#ff5f52</color>
+    <color name="colorAccent">#c62828</color>
+
+    <color name="summary">#e84e40</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Background">#e0e0e0</color>
+    <color name="Black">#000000</color>
+    <color name="Title">#DE000000</color>
+    <color name="Caption">#8A000000</color>
+    <color name="selected">#22222222</color>
+    <color name="LargeWhitePrimary">#B2FFFFFF</color>
+    <color name="LargeBlackPrimary">#A8000000</color>
+    <color name="NormalWhitePrimary">#E5FFFFFF</color>
+    <color name="NormalBlackPrimary">#FF000000</color>
+
+    <color name="Separation">#1A000000</color>
+    <color name="Decoration">#33000000</color>
+    <color name="Nothing">#00000000</color>
+
+    <!-- 600-->
+    <color name="colorPrimary_Purple">#8e24aa</color>
+    <color name="colorPrimaryDark_Purple">#5c007a</color>
+    <color name="colorPrimaryLight_Purple">#c158dc</color>
+    <color name="colorAccent_Purple">#8e24aa</color>
+
+    <!-- 700-->
+    <color name="colorPrimary_Bule">#1976d2</color>
+    <color name="colorPrimaryDark_Bule">#004ba0</color>
+    <color name="colorPrimaryLight_Bule">#63a4ff</color>
+    <color name="colorAccent_Bule">#1976d2</color>
+
+    <!-- 800-->
+    <color name="colorPrimary_Cyan">#00838f</color>
+    <color name="colorPrimaryDark_Cyan">#005662</color>
+    <color name="colorPrimaryLight_Cyan">#4fb3bf</color>
+    <color name="colorAccent_Cyan">#00838f</color>
+
+    <!-- 700 -->
+    <color name="colorPrimary_Green">#388e3c</color>
+    <color name="colorPrimaryDark_Green">#00600f</color>
+    <color name="colorPrimaryLight_Green">#6abf69</color>
+    <color name="colorAccent_Green">#388e3c</color>
+
+    <!-- 500 -->
+    <color name="colorPrimary_Brown">#795548</color>
+    <color name="colorPrimaryDark_Brown">#4b2c20</color>
+    <color name="colorPrimaryLight_Brown">#a98274</color>
+    <color name="colorAccent_Brown">#795548</color>
+
+
+    <!-- 600 -->
+    <color name="colorPrimary_Grey">#757575</color>
+    <color name="colorPrimaryDark_Grey">#494949</color>
+    <color name="colorPrimaryLight_Grey">#a4a4a4</color>
+    <color name="colorAccent_Grey">#757575</color>
+
+    <!-- 500 -->
+    <color name="colorPrimary_Yellow">#000</color>
+    <color name="colorPrimaryDark_Yellow">#000</color>
+    <color name="colorPrimaryLight_Yellow">#000</color>
+    <color name="colorAccent_Yellow">#000</color>
+
+</resources>
+

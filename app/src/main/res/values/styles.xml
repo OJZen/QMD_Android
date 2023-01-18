@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccent</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+    </style>
+
+    <style name="AppTheme.Purple">
+        <item name="colorPrimary">@color/colorPrimary_Purple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Purple</item>
+        <item name="colorSecondary">@color/colorAccent_Purple</item>
+        <item name="android:navigationBarColor">@color/colorAccent_Purple</item>
+    </style>
+
+    <style name="AppTheme.Blue">
+        <item name="colorPrimary">@color/colorPrimary_Bule</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Bule</item>
+        <item name="colorSecondary">@color/colorAccent_Bule</item>
+        <item name="android:navigationBarColor">@color/colorAccent_Bule</item>
+    </style>
+
+    <style name="AppTheme.Cyan">
+        <item name="colorPrimary">@color/colorPrimary_Cyan</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Cyan</item>
+        <item name="colorSecondary">@color/colorAccent_Cyan</item>
+        <item name="android:navigationBarColor">@color/colorAccent_Cyan</item>
+    </style>
+
+    <style name="AppTheme.Green">
+        <item name="colorPrimary">@color/colorPrimary_Green</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Green</item>
+        <item name="colorSecondary">@color/colorAccent_Green</item>
+        <item name="android:navigationBarColor">@color/colorAccent_Green</item>
+    </style>
+
+    <style name="AppTheme.Brown">
+        <item name="colorPrimary">@color/colorPrimary_Brown</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Brown</item>
+        <item name="colorSecondary">@color/colorAccent_Brown</item>
+        <item name="android:navigationBarColor">@color/colorAccent_Brown</item>
+    </style>
+
+    <style name="AppTheme.Grey">
+        <item name="colorPrimary">@color/colorPrimary_Grey</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Grey</item>
+        <item name="colorSecondary">@color/colorAccent_Grey</item>
+        <item name="android:navigationBarColor">@color/colorAccent_Grey</item>
+    </style>
+
+    <style name="Yellow" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Yellow</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorAccent_Yellow</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:navigationBarColor">@color/colorAccent_Yellow</item>
+    </style>
+
+</resources>

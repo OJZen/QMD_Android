@@ -1,0 +1,320 @@
+<resources>
+    <string name="app_name">QMD</string>
+
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+
+    <!--音乐质量-->
+    <string-array name="music_downQuality">
+        <item>手动选择(长按下载按钮也可触发)</item>
+        <item>Hi-Res</item>
+        <item>无损flac</item>
+        <item>320kbps</item>
+        <item>192kbps</item>
+        <item>128kbps</item>
+    </string-array>
+
+    <string-array name="music_playQuality">
+        <item>320kbps</item>
+        <item>192kbps</item>
+        <item>128kbps</item>
+        <item>96kbps</item>
+    </string-array>
+
+    <string-array name="music_downQuality_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="music_playQuality_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!--同时下载数量-->
+    <string-array name="down_quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="down_quantity_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!--歌曲命名规则-->
+    <string-array name="name_rule">
+        <item>歌手 - 歌名</item>
+        <item>歌名 - 歌手</item>
+        <item>歌名</item>
+    </string-array>
+    <string-array name="name_rule_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="close_content">
+        <item>再按一次退出</item>
+        <item>再戳一次关闭</item>
+        <item>你再点一下我就走咯!</item>
+        <item>你确定要离开我？</item>
+        <item>确认退出？</item>
+        <item>再戳疼人家就不理你了！</item>
+        <item>下次见，再按一次关闭。</item>
+        <item>你点两次返回，不带走一片云彩。</item>
+        <item>真的猛士，敢于直面惨淡的人生，敢于按两次返回。</item>
+        <item>如果你很珍惜时间，你就不会看到这条消息，再按一次退出。</item>
+        <item>年轻人手速不行啊，再按一次退出。</item>
+        <item>你真的要离开吗？我的老伙计。</item>
+        <item>要退出应用的话，也许你应该再按一次返回。</item>
+        <item>我不会告诉你再点一下返回就能退出应用。</item>
+        <item>你按下返回键的方式真温柔，要不再按一次？</item>
+        <item>要不要再来一发！我指的是…返回键。</item>
+        <item>让我猜一下你等下会点什么，是返回键吗？</item>
+        <item>感谢使用，再按一次退出，下次再见！</item>
+        <item>快速按两次返回是看不到次消息的噢</item>
+    </string-array>
+
+    <string-array name="donttouch">
+        <item>你没事戳我干啥w(ﾟДﾟ)w</item>
+        <item>再摸我就要生气咯！</item>
+        <item>难道没人教你不能随便碰别人吗？</item>
+        <item>emmm..这里..不行…</item>
+        <item>哎呀ヽ</item>
+        <item>戳疼人家就不理你了！</item>
+        <item>你这么无聊吗？</item>
+        <item>上帝赐给你的手指就是用来戳我的？</item>
+        <item>既然把我做出来，为什么不做好点呢？╮（╯＿╰）╭</item>
+        <item>如果你还执意要摸我的话，我希望下次能轻点。</item>
+        <item>冷知识：QMD永远不会有广告。</item>
+        <item>天啊你有完没完</item>
+        <item>乌拉！</item>
+        <item>如果JZen停止维护会将QMD开源</item>
+        <item>让我猜一下你等下会干什么，嗯，是再点一次吗？</item>
+        <item>很遗憾，这里并没有什么东西。</item>
+        <item>你在期待什么？</item>
+        <item>现在就你的手指有点温度</item>
+        <item>心中有光，慢食三餐。</item>
+        <item>生活明朗，万物可爱。</item>
+        <item>(๑•̀ㅂ•́)و✧掐指（脚趾）一算，你有好事发生。</item>
+        <item>QMD主要的在QQ群、TG群和享乐乎公众号发布更新，其他地方JZen一概不知。</item>
+        <item>JZen作为开发者，但却几乎不怎么使用QMD</item>
+        <item>果然还是吃得太饱了</item>
+        <item>就这个位置，啊…用力！嗯..</item>
+        <item>你不是故意碰到的，是吗？</item>
+        <item>哒咩！</item>
+        <item>自爆程序已启动！开玩笑的，我还没活够呢。</item>
+        <item>正在检查更新…哦豁，没有做这个功能</item>
+        <item>正好，我想发发牢骚</item>
+        <item>可惜我并不会说骚话</item>
+        <item>关于网友一脸坏笑的调戏QMD这件事</item>
+    </string-array>
+
+    <string name="app_version">
+        Version
+    </string>
+
+    <string name="about_info">
+        简洁、实用的音乐下载APP\n提供下载/试听音乐功能\n程序数据来源于qq.com\n程序会收集下载和搜索数据用于数据分析。在权限和隐私上严格遵守谷歌开发文档的最佳实现，绝不滥用权限，绝不收集包含任何隐私信息。\nQMD为本人学习之用，如果QMD侵犯了您的权益，请第一时间发邮件告知。
+    </string>
+
+    <string name="about_group">
+        QQ群交流
+    </string>
+
+    <string name="about_telegram">
+        Telegram群组
+    </string>
+
+    <string name="about_twitter">
+        JZen的Twitter
+    </string>
+
+    <string name="about_officalAccounts">
+        公众号：享乐乎
+    </string>
+
+    <string name="about_email">
+        邮箱：admin@jzen.tech
+    </string>
+
+    <string name="about_log">
+        最近一次的崩溃日志
+    </string>
+
+    <string name="donate">
+        打赏码已保存到相册，\n真心感谢每一个支持我的朋友。\n付款里面的备注我都有看，但是备注没办法回复，非常抱歉。\n想要和我联系的朋友可以发邮件给我，感谢支持。
+    </string>
+
+    <string name="update">
+        V1.0 下载，播放，预览歌词\n
+        V1.0.1 优化代码，增加使用OkHttp框架。\n
+        V1.1.0 优化音乐列表加载，支持Android5.0\n
+        V1.1.1 更改音乐搜索页面逻辑\n
+        V1.1.2 添加音乐控制进度条\n
+        V1.1.3 修复当资源获取失败时的卡顿\n改了很多UI，看起来更舒服一些。\n
+        点击关于页面QQ群能够直接切换到QQ/TIM应用，不用麻烦复制了。\n 优化了一些代码逻辑（常规更新（ ￣ー￣））
+        V1.1.4 更改歌曲详情页面的UI\n添加加载动画
+        V1.1.5 添加手动选择音质下载(推荐使用)\n添加无损音质\n修复并添加了一些bug。
+        V1.1.6 添加缓存和清除缓存功能\n修复一些bug。\n添加捐赠页面
+        V1.1.61 修复一些无损无法下载的问题
+        V1.1.7 添加外置SD卡路径的选择\n添加已下载的播放功能
+        V1.1.8 优化列表图片的加载\n修复已下载播放闪退的问题
+        V1.1.81 优化播放卡顿的问题\n修复播放图片不显示的问题
+        V1.1.9 修改歌曲列表样式\n修复好几个可能导致闪退的Bug
+        V1.2.0 添加歌单\n打赏添加了支付宝红包
+        V1.2.1 更为QQ添加歌单
+        V1.2.2 修复几个歌单的bug
+        V1.2.3 修复一个接口失效的问题
+        V1.2.4 修复接口失效的问题\n修复已下载倒序的问题
+        V1.2.5 修复320kbps及以下资源的接口,无损暂时还未找到解决方案\n修复播放资源设置错误的问题
+        V1.2.6 修复无损接口\n修复歌单接口
+        V1.2.7 修复已下载播放歌曲位置颠倒的问题\n添加下载歌词功能\n同时下载数量更改为: 1 2 4 8
+        V1.2.8 增加保存专辑图片功能\n添加下载通知功能\n优化部分代码
+        V1.2.9 修复无损接口
+        V1.3.0 修复接口
+        V1.3.1 优化下载接口
+        V1.3.2 删除ape下载\n修复一些导致闪退的bug\n添加歌词可复制功能（歌词页面长按）\n升级目标sdk版本为28\n添加3群链接
+        V1.3.3 增加批量下载\n增加自动切换低音质下载\n修复一些bug\n微调部分UI
+        V1.3.3.1 作者也不知道更新了什么
+        V1.3.4 歌词页面下滑隐藏下载和播放按钮\n添加删除下载任务和清空下载记录的按钮\n优化批量下载\n添加重置下载器功能，提示"内部错误"的时候可以点一下\n修复几个空指针导致闪退的BUG
+        V1.3.5 修复添加歌单导致闪退的BUG\n添加歌单清空按钮\n优化部分代码
+        V1.3.6 修复320及以下的接口
+        V1.3.7 修复无损\n删除192k的选项\n默认关闭自动切换低音质
+        V1.3.8 添加获取资源失败自动重试\n添加搜索历史\n添加暂停和开始全部下载任务按钮\n优化一些细节以及修复一些BUG
+        V1.3.9 修复已下载删除后列表不刷新的问题\n修复搜索历史点击后不置顶的问题\n修复由于开启自动下载歌词导致批量下载时闪退的bug
+        V1.3.9.1 接口解析资源出错的问题
+        2019/09/21 V1.3.9.3 修复低音质获取资源失败的问题\n试听音质添加96kbps\n优化一些细节
+        2019/09/22 V1.4.0   降低获取资源错乱的概率\n添加下载文件命名规则设置\n添加主题色设置\n调整底部播放器的UI\n添加下载重复文件删除提示\n修复下载128kbps的资源变成m4a的问题
+        2019/09/24 V1.4.1   修复删除已存在文件闪退的问题\n修复删除下载记录出现闪退和错位的问题\n修复资源获取失败的问题
+        2019/09/29 V1.4.2   全面修复接口问题\n去除获取手机权限\n优化获取资源稳定性\n优化批量下载速度\n添加ogg格式的下载/试听
+        2019/10/02 V1.4.2.1 修复代码逻辑错误导致的获取资源失败的BUG。
+        2019/10/11 V1.4.3   将未购买的数字专辑音乐显示为不可用。\n 提升获取资源稳定性。\n 修复Android 5.0闪退的问题
+        2019/10/19 V1.4.4   修复一些能下载的音乐也显示为灰色的问题\n修复全选音乐的时候不显示颜色的问题\n新增用歌单码添加歌单的功能\n顺手修复几个无伤大雅的bug
+        2019/11/14 V1.4.5   修复某些320k资源下载失败的问题\n优化很多资源获取相关的细节问题\n数字专辑和无版权音乐能下载了
+        2019/11/17 V1.4.5.1 修复1.4.5带来的一些不稳定问题
+        2019/11/24 V1.4.6   修复由于歌单过大导致点击批量下载按钮闪退的问题\n优化批量下载加载速度\n添加自适应图标
+        2019/12/25 V1.4.7   修复320k的资源\n优化批量下载\n修复删除已下载任务会把正在下载任务删除的bug
+        2020/1/5 V1.4.8     修复批量下载闪退的问题
+        2020/1/24 V1.4.9    添加数字专辑下载
+        2020/3/24 V1.4.9.1  修复添加歌单空白的问题\n修复批量下载歌曲名称错乱的问题
+        2020/4/5 V1.5.0_beta_1 全面更新播放器，增加播放器界面\n优化部分代码
+        2020/4/10 V1.5.0_beta_2 添加自动顺序播放\n添加上一曲和下一曲功能
+        2020/4/19 V1.5.0    添加播放列表\n优化部分代码
+        2020/4/30 V1.5.1    新增全新的下载对话框\n修复播放音乐时获取资源失败不会下一首的问题\n修复某些下载歌词错误的问题\n优化部分代码
+        2020/5/12 V1.5.2    修复歌词apos;乱码的问题\n添加随机播放、列表循环和单曲循环三种播放模式\n修复播放列表最后项不显示的问题
+        2020/5/15 V1.5.2.1  修复在没有歌单的情况下点击下一首闪退的问题\n修复歌曲列表只显示一位歌手的问题
+        2020/5/26 V1.5.3    调整大部分对话框\n添加下载目录修改功能\n添加图片下载目录修改功能\n调整下载对话框的布局
+        2020/7/29 V1.5.4    添加蓝牙等外设控制音乐播放功能\n新增主页面菜单\n适配横屏界面\n优化部分页面UI效果
+        2021/2/25 V1.5.5    更换服务器\n更改接口，采用Cookie方式\n调整播放页面UI
+        2021/3/2 V1.5.5 Revision 1  修复横屏闪退的Bug\n修复文件名过长导致下载失败的bug\n修复列表循环播放最后一曲无法点击下一曲的bug\n
+                                    修复获取服务器资源空白的bug\n重写资源获取逻辑，新增资源获取队列\n重写批量下载\n删除多余的群号，新增彩蛋语录
+        2021/3/7 V1.5.6     歌曲收藏\n提交播放记录\n提交歌单统计\n完善开页面通知
+        2021/3/11 V1.5.7    修复添加歌单闪退\n更换歌单接口，修复“我喜欢”歌单\n修复小屏布局bug
+        2021/4/7 V1.5.8     修复无法添加歌单的Bug\n修复删除歌单错乱以及闪退的bug\n修复Android 11无法保存专辑图片的bug
+        2021/5/10 V1.5.9    修复Android 11下载失败的Bug\n添加播放通知栏\n更新QQ群\n优化和修复自动下载低音质\n修复搜索空白\n更正收藏顺序\n资源队列不再显示已完成的任务
+        2021/5/16 V1.6.0    修复了一个无法获取“我喜欢”歌单的问题\n修复文件名存在非法字符导致的下载失败
+        2021/5/18 V1.6.0    修复播放图片空白歌曲闪退问题\n添加通知栏播放控件的上下曲控制\n修复若干bug
+        2021/6/19 V1.6.0    增加查看歌曲信息菜单\n加强盗版防范\n更改获取cookie的逻辑\n修复搜索空白\n修复由于字体过大导致布局显示错误的问题
+        2021/8/15 V1.6.1    升级Gradle，升级各种库
+        2022/1/9  V1.7.0 beta 改包名\n初步改进接口\n修复搜索空白\n调整项目架构
+        2022/1/30 V1.7.0 beta2 完善接口\n添加bugly\n新的多选\n重构部分功能
+        2022/3/6  V1.7.0    修复闪退问题\n解决一些context滥用的问题\n重构歌单数据库
+    </string>
+
+    <string-array name="colors">
+        <item>#D32F2F</item>
+        <item>#C2185B</item>
+        <item>#9C27B0</item>
+        <item>#673AB7</item>
+        <item>#3F51B5</item>
+        <item>#2196F3</item>
+        <item>#0097A7</item>
+        <item>#009688</item>
+        <item>#4CAF50</item>
+        <item>#CDDC39</item>
+        <item>#FBC02D</item>
+        <item>#FFA000</item>
+        <item>#F57C00</item>
+        <item>#FF5722</item>
+        <item>#795548</item>
+        <item>#9E9E9E</item>
+        <item>#607D8B</item>
+    </string-array>
+
+    <!--音乐质量-->
+    <string-array name="list_download_quality">
+        <item>hires flac</item>
+        <item>无损 flac</item>
+        <item>320kbps mp3</item>
+        <item>192kbps ogg</item>
+        <item>128kbps mp3</item>
+    </string-array>
+
+    <string name="msg_not_loaded">资源未加载完成，请稍后再试</string>
+
+    <string name="text_folder_empty">此目录为空</string>
+
+    <string-array name="text_array_qqgroup">
+        <item>QMD 乾：1005433803</item>
+    </string-array>
+
+    <string-array name="theme_color">
+        <item>Red</item>
+        <item>Purple</item>
+        <item>Blue</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Brown</item>
+        <item>Grey</item>
+        <item>Yellow</item>
+    </string-array>
+
+    <string-array name="theme_color_chs">
+        <item>红色</item>
+        <item>紫色</item>
+        <item>蓝色</item>
+        <item>蓝绿色</item>
+        <item>绿色</item>
+        <item>棕色</item>
+        <item>灰色</item>
+        <item>实验性</item>
+    </string-array>
+
+    <string-array name="text_songlist_option">
+        <item>删除歌单</item>
+        <item>歌单详情</item>
+        <item>复制歌单码</item>
+    </string-array>
+
+    <string name="text_downloadpath_notfound">找不到储存路径，无法下载〒▽〒 请查看设置页面的音乐下载路径是否正确</string>
+    <string name="text_input_correct">请输入正确的QQ号/歌单码</string>
+    <string name="notification_download_name">下载通知</string>
+    <string name="notification_download_channel">Download</string>
+    <string name="notification_player_name">正在播放的音乐</string>
+    <string name="notification_player_channel">Player</string>
+    <string name="text_exception_error">QMD遇到一个没有意料到的错误w(ﾟДﾟ)w</string>
+    <string name="text_exception_error_media_not_found">无法定位请求的资源</string>
+    <string name="text_play_music">播放歌曲</string>
+    <string name="text_download_music">下载音乐</string>
+    <string name="text_loading_lyric">正在加载歌词</string>
+    <string name="text_album_img">专辑图片</string>
+    <string name="text_playing_music">正在播放的音乐</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_search_music">搜索音乐</string>
+    <string name="text_search_input_please">请输入歌曲或歌手…</string>
+    <string name="text_button_of_delete_history">删除搜索历史的按钮</string>
+    <string name="text_just_a_history_icon">只是个搜索历史的图标</string>
+    <string name="text_clear_history">清空所有记录</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:key="download"
+        android:title="下载设置">
+        <Preference
+            android:key="downpath"
+            android:summary="/sdcard/Music"
+            android:title="下载路径" />
+        <Preference
+            android:key="imagepath"
+            android:summary="/sdcard/Music/专辑图片"
+            android:title="图片保存路径" />
+        <ListPreference
+            android:entries="@array/music_downQuality"
+            android:entryValues="@array/music_downQuality_value"
+            android:key="downquality"
+            android:defaultValue="0"
+            android:summary="手动选择"
+            app:useSimpleSummaryProvider="true"
+            android:title="下载音质" />
+        <ListPreference
+            android:entries="@array/music_playQuality"
+            android:entryValues="@array/music_playQuality_value"
+            android:key="playquality"
+            android:defaultValue="3"
+            android:summary="96kbps"
+            app:useSimpleSummaryProvider="true"
+            android:title="播放音质" />
+        <ListPreference
+            android:entries="@array/down_quantity"
+            android:entryValues="@array/down_quantity_value"
+            android:key="downquantity"
+            android:defaultValue="1"
+            android:summary="2"
+            app:useSimpleSummaryProvider="true"
+            android:title="同时下载数量"/>
+        <ListPreference
+            android:entries="@array/name_rule"
+            android:entryValues="@array/name_rule_value"
+            android:key="namerule"
+            android:defaultValue="0"
+            app:useSimpleSummaryProvider="true"
+            android:summary="歌手 - 歌曲名"
+            android:title="文件命名规则"/>
+        <SwitchPreference
+            android:enabled="true"
+            android:key="autodownlower"
+            android:title="自动切换低音质下载"
+            android:defaultValue="false"
+            android:summary="当高音质获取资源失败将自动切换成更低的音质进行下载"/>
+        <SwitchPreference
+            android:key="autodownlrc"
+            android:title="自动下载歌词"
+            android:defaultValue="false"
+            android:summary="下载歌曲的时候顺便下载lrc歌词文件"/>
+        <SwitchPreference
+            android:enabled="true"
+            android:key="notification"
+            android:defaultValue="false"
+            android:summary="下载相关的通知"
+            android:title="下载通知" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="other"
+        android:title="其他设置">
+        <Preference
+            android:key="themecolor"
+            android:summary="红"
+            android:defaultValue="Red"
+            android:title="主题颜色"/>
+        <Preference
+            android:key="resetdownload"
+            android:summary="如果出现内部错误可以尝试点一下"
+            android:title="重置下载器"/>
+        <Preference
+            android:key="clearcache"
+            android:summary="没有缓存"
+            android:title="清除缓存"/>
+    </PreferenceCategory>
+</PreferenceScreen>
