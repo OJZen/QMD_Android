@@ -32,7 +32,7 @@ QMD于2022.9.14停止服务。
 
 ## 关于接口
 
-我并没有特地整理过QQ音乐的接口，因为QMD所使用的接口比较少（只有3个）。如果想参考QQ音乐接口，本项目可能并不是特别合适。如果想看比较完善的QQ音乐接口，可以参考[jsososo/QQMusicApi](https://github.com/jsososo/QQMusicApi)。
+我并没有特地整理过QQ音乐的接口，因为QMD所使用的接口比较少。如果想参考QQ音乐接口，本项目可能并不是特别合适。如果想看比较完善的QQ音乐接口，可以参考[jsososo/QQMusicApi](https://github.com/jsososo/QQMusicApi)。
 
 ## 关于服务器端
 
